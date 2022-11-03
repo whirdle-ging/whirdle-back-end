@@ -24,13 +24,14 @@ app.post('/words', (req, res) => {
 });
 
 app.get('/', (req, res) => {
+	res.send(letters);
 	res.json(letters);
 });
 
 app.post('/letters', (req, res) => {
+	res.send('hello');
 	res.json(letters);
 });
-
 
 app.use('/letters', letters);
 app.use('/words', words);
