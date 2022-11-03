@@ -38,7 +38,7 @@ app.use('/words', words);
 
 app.use(notFound);
 app.use(errorHandlerMiddleware);
-const portDB = process.env.PORT || 5000;
+const portDB = process.env.PORT || 8000;
 
 const start = async () => {
 	try {
