@@ -15,7 +15,6 @@ app.use(express.json());
 
 // routes
 app.get('/', (req, res) => {
-	res.send('Whirdle');
 	res.json(words);
 });
 
